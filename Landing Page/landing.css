@@ -26,18 +26,23 @@ body {
   left: 70%;
   transform: translate(-50%, -50%);
   font-size: 3.5rem;
+  color: #313421;
 }
 
 #landing {
   display: block;
   width: 1400px;
-  margin: 2% auto;
+  margin: 0 auto;
 }
 
 #product {
   text-align: center;
   padding: 1.5rem;
   margin: .5rem 0;
+}
+
+#product h1 {
+  margin: 0 0 1rem;
 }
 
 .product-tree {
@@ -54,12 +59,20 @@ body {
 .tree-type-inner {
   position: relative;
   min-height: 350px;
-  border: 1px solid #333;
+  border: 1px solid #313421;
   padding: .5rem;
 }
 
 .tree-type-inner h3 {
   font-size: 1.55rem;
+  margin-bottom: 0;
+  color: #706542;
+  font-weight: bold;
+}
+
+hr {
+  border-top: 1px solid #62473F;
+  margin: .25rem 0;
 }
 
 .tree-type-inner span {
@@ -75,6 +88,12 @@ body {
   margin: 1.5rem 0;
 }
 
+#about {
+  background-color: #313421;
+  color: #AEAEAD;
+  padding: 1rem;
+}
+
 .about-inner > div {
   flex: 0 0 50%;
   padding: 0 1rem;
@@ -84,10 +103,37 @@ iframe {
   width: 100%;
 }
 
+#contact {
+  margin: 3rem 0;
+}
+
+#contact h3 {
+  text-align: center;
+}
+
+#form {
+  display: block;
+  width: 60%;
+  margin: 1.5rem auto;
+}
+
+#email {
+  border: 1px solid #333;
+  border-radius: 0;
+}
+
+#submit {
+  color: #313421;
+  background-color: inherit;
+  border: 1px solid #313421;
+  border-radius: 0;
+}
+
 footer {
   margin-top: auto;
   text-align: center;
   padding: 10px;
+  background-color: #AEAEAD;
 }
 
 @media (max-width: 1200px) {
