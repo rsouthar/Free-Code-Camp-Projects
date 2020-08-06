@@ -1,4 +1,97 @@
+html {
+  height: 100%;
+}
+
 body {
+  display: flex;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  min-height: 100%;
   font-size: 1rem;
   font-family: sans-serif;
+}
+
+#header-img {
+  position: relative;
+  width: 100%;
+  height: 90vh;
+  object-fit: cover;
+  object-position: center;
+}
+
+.hero h1 {
+  position: absolute;
+  top: 50%;
+  left: 70%;
+  transform: translate(-50%, -50%);
+  font-size: 3.5rem;
+}
+
+#landing {
+  display: block;
+  width: 1400px;
+  margin: 2% auto;
+}
+
+#product {
+  text-align: center;
+  padding: 1.5rem;
+  margin: .5rem 0;
+}
+
+.product-tree {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-between;
+}
+
+.product-tree > div {
+  flex: 0 0 33%;
+  padding: .5rem;
+}
+
+.tree-type-inner {
+  position: relative;
+  min-height: 350px;
+  border: 1px solid #333;
+  padding: .5rem;
+}
+
+.tree-type-inner h3 {
+  font-size: 1.55rem;
+}
+
+.tree-type-inner span {
+  position: absolute;
+  left: .6rem;
+  bottom: .5rem;
+  font-size: 1.3rem;
+}
+
+.about-inner {
+  display: flex;
+  flex-flow: row wrap;
+  margin: 1.5rem 0;
+}
+
+.about-inner > div {
+  flex: 0 0 50%;
+  padding: 0 1rem;
+}
+
+iframe {
+  width: 100%;
+}
+
+footer {
+  margin-top: auto;
+  text-align: center;
+  padding: 10px;
+}
+
+@media (max-width: 1200px) {
+  #landing {
+    width: 800px:
+  }
 }
