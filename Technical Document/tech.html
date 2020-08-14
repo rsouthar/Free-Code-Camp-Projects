@@ -1,3 +1,4 @@
+<!DOCTYPE html>
 <html>
 <head>
   <meta charset="UTF-8">
@@ -6,78 +7,126 @@
   <title>Document</title>
 
   <link rel="stylesheet" href="tech.css">
+  
 </head>
 <body>
   <div class="main-content">
     <nav id="navbar">
       <div class="navbar-inner">
         <header>
-          <h1>HTML Technical Document</h1>
+          <h1>Javascript Loop Technical Document</h1>
         </header>
 
-        <a href="#" class="nav-link">Some text</a>
-        <a href="#" class="nav-link">Some text</a>
-        <a href="#" class="nav-link">Some text</a>
-        <a href="#" class="nav-link">Some text</a>
-        <a href="#" class="nav-link">Some text</a>
+        <a href="#for" class="nav-link">FOR</a>
+        <a href="#for_in" class="nav-link">FOR IN</a>
+        <a href="#for_of" class="nav-link">FOR OF</a>
+        <a href="#while" class="nav-link">WHILE</a>
+        <a href="#do_while" class="nav-link">DO WHILE</a>
       </div>
     </nav>
     <main id="main-doc">
-      <section class="main-section">
+      <section id="for" class="main-section">
         <header>
-          <p></p>
-          <p></p>
-          <code></code>
-          <ul>
-            <li></li>
-          </ul>
+          <h1>FOR</h1>
         </header>
+        <p>A For Loop consists of three optional expressions that are enclosed in parentheses, separated by semicolons, with some statement in the loop.</p>
+        <p>Example and Uses</p>
+        <pre>
+          <code>
+            for (let i = 0; i < 7; i++) {
+              console.log(i);
+            }
+          </code>
+        </pre>
+        <ul>
+          <li>Used this loop to iterate through an array.</li>
+        </ul>
       </section>
-      <section class="main-section">
+      <section id="for_in" class="main-section">
         <header>
-          <p></p>
-          <p></p>
-          <code></code>
-          <ul>
-            <li></li>
-          </ul>
+          <h1>FOR IN</h1>
         </header>
-      </section>
-      <section class="main-section">
-        <header>
-          <p></p>
-          <p></p>
-          <code></code>
-          <ul>
-            <li></li>
-          </ul>
-        </header>
-      </section>
-      <section class="main-section">
-        <header>
-          <p></p>
-          <p></p>
-          <code></code>
-          <ul>
-            <li></li>
-          </ul>
-        </header>
-      </section>
-      <section class="main-section">
-        <header>
-          <p></p>
-          <p></p>
-          <code></code>
-          <ul>
-            <li></li>
-          </ul>
-        </header>
-      </section>
+        <p>Loops through properties of objects.</p>
+        <p>Example and Uses</p>
+        <pre>
+          <code>
+            let person = {firstname: "Dave", lastname: "Jones", age: 35};
 
+            let text = '';
+            let x;
+            for (x in person) {
+              text =+ person[x];
+            }
+          </code>
+        </pre>
+        <ul>
+          <li>Should not be used to iterate over an Array where the index order is important.</li>
+        </ul>
+      </section>
+      <section id="for_of" class="main-section">
+        <header>
+          <h1>FOR OF</h1>
+        </header>
+        <p>Loops over data structures that are iterable suchs as Arrays, String, Map etc.</p>
+        <p>Example and Uses</p>
+        <pre>
+          <code>
+            let car = ['BMW', 'Honda', 'Toyota', 'Ferrari'];
+            let x;
+
+            for (x of car) {
+              console.log(x + '\n');
+            }
+          </code>
+        </pre>
+        <ul>
+          <li>The variable x must be an iterable value.</li>
+        </ul>
+      </section>
+      <section id="while" class="main-section">
+        <header>
+          <h1>WHILE</h1>
+        </header>
+        <p>Loops over a block of code as long as a specific condition is true.</p>
+        <p>Example and Uses</p>
+        <pre>
+          <code>
+            let i, text;
+            while ( i < 10) {
+              text += "The number is " + i;
+              i++;
+            }
+          </code>
+        </pre>
+        <ul>
+          <li>Don't forget to increase the variable in the condition or there will be an infinite loop and will crash the browser.</li>
+        </ul>
+      </section>
+      <section id="do_while" class="main-section">
+        <header>
+          <h1>DO WHILE</h1>
+        </header>
+        <p>This loop will execute at least once even if the condition is false.  If true, then it will execute as long as the condition is true.</p>
+        <p>Example and Uses</p>
+        <pre>
+          <code>
+            let i, text;
+            do {
+              text =+ "The number is " + i;
+              i++;
+            }
+            while ( i < 10);
+          </code>
+        </pre>
+        <ul>
+          <li>Don't forget to increase the variable in the condition or there will be an infinite loop and will crash the browser.</li>
+        </ul>
+      </section>
       <footer>
         2020 Richard Southard
       </footer>
     </main>
   </div>
+  <script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
 </body>
 </html>
